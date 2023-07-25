@@ -1,0 +1,55 @@
+
+body {
+    background-color: gainsboro;
+}
+.mainDiv {
+    width: 75%;
+    margin: auto;
+    box-shadow: 5px 5px 25px 15px black;
+    margin-bottom: 35px;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+}
+.card {
+    background-color: lightblue;
+}
+.card:hover, .formStyle:hover, .contactStyle:hover {
+    box-shadow: 5px 5px 25px 15px black;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    grid-gap: 10px;
+    width: 75%;
+    margin: auto;
+}
+footer {
+    background-color: darkgray;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+.formStyle, .contactStyle {
+    width: 45%;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.contactWrapper {
+    display: flex;
+}
+#getBig {
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 700px){
+    .contactWrapper {
+        display: block;
+        margin: auto;
+    }
+    .formStyle, .contactStyle {
+        width: 90%;
+    }
+}
